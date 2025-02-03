@@ -1,0 +1,69 @@
+.search-results {
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3.5rem;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  &__btn {
+    &--prev {
+      float: left;
+    }
+
+    &--next {
+      float: right;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 1.5rem;
+    text-align: center;
+
+    &__btn {
+      float: none;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+  }
+}
+
+.copyright {
+  color: $color-grey-dark-2;
+  font-size: 1.2rem;
+  padding: 0 3.5rem;
+  margin-top: 4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1rem;
+    padding: 0 2rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .twitter-link:link,
+  .twitter-link:visited {
+    color: $color-grey-dark-2;
+  }
+}
